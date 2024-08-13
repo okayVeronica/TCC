@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tulip Love - Cadastro </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+ </head>
+ <body>
+    <div class="container">
+        <div class="login-container">
+            <h2>Bem-vindo ao Tulip Love</h2>
+            <form action="cadastro.php" method="POST">
+                <h4>Nome:</h4><br>
+                <input type="text" name="nome" placeholder="escreva seu nome completo" required><br>
+                <h4>Qual sua idade?</h4><br>
+                <select name="idade" id="idade">
+                    <option value="idade">entre 18-29 anos</option>
+                    <option value="idade">entre 30-49 anos</option>
+                    <option value="idade">entre 50+</option>
+                </select>
+                <h4>Qual seu genêro?</h4><br>
+                <select name="genero">
+                    <option value="fem">Feminino</option>
+                    <option value="masc">Masculino</option>
+                </select>
+                <h4>A quanto tempo está com seu parceiro?</h4>
+                <select name="tempo_namoro">
+                    <option value="1">menos de 1 ano</option>
+                    <option value="2">1-5 anos</option>
+                    <option value="3">6-10 anos</option>
+                    <option value="4">mais de 10 anos</option>
+                </select>
+                <h4>Digite seu e-mail:</h4><br>
+                <input type="text" name="email" required><br>
+                <h4>Crie uma senha criativa!</h4>
+                <input type="password" name="password" placeholder="Senha" required><br>
+                <button type="submit"> Realizar cadastro</button>
+            </form>
+                <div class="social-login">
+                <h3>Se cadastrar com:</h3>
+                <a href="google_login.php">Google</a><br>
+                <a href="facebook_login.php">Facebook</a><br><br>
+                <a href="login.html">Já tem uma conta? Entre!</a>
+            </div>
+        </div>
+    </div>
+ </body>
+ </html>

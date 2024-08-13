@@ -1,0 +1,235 @@
+/* Paleta de cores: #FBF6EB, #D1C1B2, #C19D7D, #767154, #344137, #6F171D */
+
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #FBF6EB;
+    color: #344137;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #6F171D;
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1.5em;
+}
+
+header nav ul li a {
+    color: #FBF6EB;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #D1C1B2;
+}
+
+.hero {
+    background: linear-gradient(rgba(111, 23, 29, 0.8), rgba(111, 23, 29, 0.8)), url('background.jpg') center/cover no-repeat;
+    padding: 6em 0;
+    color: #FBF6EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    max-width: 50%;
+    padding-right: 2em;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    color: #FBF6EB;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    color: #FBF6EB;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.cta {
+    background-color: #D1C1B2;
+    color: #6F171D;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta:hover {
+    background-color: #C19D7D;
+    transform: translateY(-3px);
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.features {
+    padding: 4em 0;
+    background-color: #FBF6EB;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    font-family: 'Playfair Display', serif;
+    color: #6F171D;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #D1C1B2;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 300px;
+    margin: 1em;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card i {
+    font-size: 2em;
+    color: #6F171D;
+    margin-bottom: 0.5em;
+}
+
+.feature-card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #344137;
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: #344137;
+}
+
+footer {
+    background-color: #6F171D;
+    color: #FBF6EB;
+    padding: 2em 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-nav ul li {
+    margin-left: 1.5em;
+}
+
+.footer-nav ul li a {
+    color: #FBF6EB;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-nav ul li a:hover {
+    color: #D1C1B2;
+}
+
+.social-media a {
+    color: #FBF6EB;
+    margin-left: 1em;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #D1C1B2;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

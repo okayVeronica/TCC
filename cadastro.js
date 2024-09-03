@@ -61,7 +61,7 @@ function Verificar() {
     } else if (!emailRegex.test(email)) {
         alert("E-mail inválido. Por favor, insira um e-mail válido.");
     } else {
-        window.location.href = 'usuario.html';
+        window.location.href = "contaPessoal.html";
     }
 }
 

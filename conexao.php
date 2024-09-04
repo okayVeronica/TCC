@@ -3,7 +3,7 @@
   $user = 'root';
   $pass = '';
   $server = 'localhost';
-  $db = 'TULIP_LOVE';
+  $db = 'tulip_love';
 
   $mysqli = mysqli_connect($server, $user, $pass, $db);
   $mysqli->set_charset('utf8');

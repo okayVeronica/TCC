@@ -1,11 +1,14 @@
-function Verificar() {
-    let tempoNamoro = document.getElementById('tempoNamoro').value;
-    let problemas = document.getElementById('problemas').value;
-    let objetivo = document.getElementById('objetivo').value;
 
-    if (!tempoNamoro || !problemas || !objetivo) {
-        alert("Por favor preencha todos os campos obrigatórios!");
-    } else {
-        window.location.href = 'homediario.html';
-}
+//Verifica se os dados do segundo formulário foram preenchidos corretamente
+function Verificar(){
+    let tempoNamoro = document.getElementById('tempoNamoro');
+    let problemas = document.getElementById('problemas');
+    let objetivo = document.getElementById('objetivo');
+
+    if(!tempoNamoro || !problemas || !objetivo){
+        alert("Por favor preencha todos os campos!");
+    }else{
+        window.location.href = "homediario.html"; 
+    }
+
 }

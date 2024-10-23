@@ -55,6 +55,7 @@ function Verificar() {
     } else if (senha !== confirmarSenha) {
         alert("As senhas tem de ser iguais!");
     } else if (isNaN(idade) || idade < 18) { // Verifica se a idade é maior que 18 anos
+        console.log(idade)
         alert("Você deve ter pelo menos 18 anos para se cadastrar.");
     } else if (!validarCPF(cpf)) { // Verifica se o CPF é válido
         alert("CPF inválido. Por favor, insira um CPF válido.");

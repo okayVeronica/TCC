@@ -4,6 +4,7 @@ function Verificar() {
     let idade = document.getElementById('idade').value;
     let cpf = document.getElementById('cpf').value;
     let email = document.getElementById('email').value;
+    let perfil = document.getElementById('perfil').value;
     let senha = document.getElementById('senha').value;
     let confirmarSenha = document.getElementById('confirmarSenha').value;
 
@@ -50,18 +51,44 @@ function Verificar() {
 
     // CÓPIA PARA TESTES
     // Validações dos campos do formulário de cadastro
-    if (!nome || !genero || !idade || !cpf || !email || !senha || !confirmarSenha) {
+    if (!nome || !genero || !idade || !cpf || !email || !perfil || !senha || !confirmarSenha) {
         alert("Por favor preencha todos os campos obrigatórios!");
     } else if (senha !== confirmarSenha) {
         alert("As senhas tem de ser iguais!");
-    } else if (isNaN(idade) || idade < 18) { // Verifica se a idade é maior que 18 anos
-        alert("Você deve ter pelo menos 18 anos para se cadastrar.");
-    } else if (!validarCPF(cpf)) { // Verifica se o CPF é válido
-        alert("CPF inválido. Por favor, insira um CPF válido.");
-    } else if (!emailRegex.test(email)) {
-        alert("E-mail inválido. Por favor, insira um e-mail válido.");
     } else {
-        window.location.href = "contaPessoal.html";
+        const dataNascimento = new Date(idade); // Converte o valor de idade (string) em um objeto Date
+        const hoje = new Date(); // Pega a data atual
+        let idadeCalculada = hoje.getFullYear() - dataNascimento.getFullYear(); // Subtrai os anos
+
+        // Verifica se o aniversário já passou no ano atual
+        const mes = hoje.getMonth() - dataNascimento.getMonth();
+        if (mes < 0 || (mes === 0 && hoje.getDate() < dataNascimento.getDate())) {
+            idadeCalculada--; // Reduz 1 ano se o aniversário não tiver passado ainda
+        }
+        if (idadeCalculada < 18) { // Verifica se a idade é maior que 18 anos
+            alert("Você deve ter pelo menos 18 anos para se cadastrar.");
+            console.log(idade)
+        } else if (!validarCPF(cpf)) { // Verifica se o CPF é válido
+            alert("CPF inválido. Por favor, insira um CPF válido.");
+        } else if (!emailRegex.test(email)) {
+            alert("E-mail inválido. Por favor, insira um e-mail válido.");
+        } else {
+            var xhr = new XMLHttpRequest();
+            var response = "";
+
+            xhr.open("POST", "kkk.php");
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.send("perfil=" + perfil);
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    console.log("nice porra kkkkkkkk");           
+                    response = xhr.responseText;
+                    
+                    if (response == "pessoal") window.location.href = "pessoal.php";
+                    if (response == "profissional") window.location.href = "profissional.php";
+                }
+            }
+        }
     }
 }
 

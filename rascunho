@@ -1,0 +1,7 @@
+<h4>A quanto tempo está com seu parceiro?</h4>
+                <select name="tempo_namoro">
+                    <option value="1">menos de 1 ano</option>
+                    <option value="2">1-5 anos</option>
+                    <option value="3">6-10 anos</option>
+                    <option value="4">mais de 10 anos</option>
+                </select>

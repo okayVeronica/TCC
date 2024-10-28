@@ -76,7 +76,7 @@ function Verificar() {
             var xhr = new XMLHttpRequest();
             var response = "";
 
-            xhr.open("POST", "kkk.php");
+            xhr.open("POST", "../REGISTRO-PHP/kkk.php");
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xhr.send("perfil=" + perfil);
             xhr.onload = function() {

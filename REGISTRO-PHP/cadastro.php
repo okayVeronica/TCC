@@ -19,7 +19,7 @@
             <label for="dataNascimento">Data de Nascimento:</label><br>
             <input type="date" id="idade" name="idade" required><br>
             <label for="cpf" class="form-label">CPF:</label><br>
-            <input type="text" class="form-control" id="cpf" placeholder="___.___.___.-__"><br>
+            <input type="text" class="form-control" id="cpf" placeholder="___.___.___-__"><br>
             <label for="email" class="form-label">E-mail:</label><br>
             <input type="email" class="form-control" id="email" placeholder="fulaninhodetal@hotmail"><br>
             <label for="">Como você pretende utilizar nossa plataforma?</label>
@@ -37,6 +37,6 @@
           <button type="submit" class="btn btn-primary" onclick="Verificar();">Cadastrar</button>
         </div>
       </form>
-      <script src='cadastro.js'></script>
+      <script src='../JS/cadastro.js'></script>
    </body>
 </html>

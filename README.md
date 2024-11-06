@@ -70,12 +70,6 @@ Este projeto é resultado da dedicação e criatividade da equipe *Tulip Love*:
 - [**Sarah Ozeto**](https://github.com/sarahozeto) - Programadora e Gerenciadora
 
 ---
-
-## 🌱 Licença
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
 **"No jardim do amor, cada tulipa representa um compromisso e uma promessa."** 🌷
 
 *Tulip Love* — cultivando o amor em cada detalhe. ❤️

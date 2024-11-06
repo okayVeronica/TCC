@@ -65,8 +65,8 @@ Nossa paleta de cores é cuidadosamente selecionada para criar uma atmosfera que
 ## 🖋️ Autores
 Este projeto é resultado da dedicação e criatividade da equipe *Tulip Love*:
 
-- [**Verônica Borges**](https://github.com/veronicaborges) - Programadora e Designer
-- [**Gabriella Innocencio**](https://github.com/gabriellainnocencio) - Designer
+- [**Verônica Borges**](https://github.com/okayVeronica) - Programadora e Designer
+- [**Gabriella Innocencio**](https://github.com/gaabriellasantoos) - Designer
 - [**Sarah Ozeto**](https://github.com/sarahozeto) - Programadora e Gerenciadora
 
 ---

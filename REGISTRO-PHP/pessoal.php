@@ -26,4 +26,4 @@
     </form>
 </body>
 </html>
-<script src='contaPessoal.js'></script>
+<script src='../JS/contaPessoal.js'></script>

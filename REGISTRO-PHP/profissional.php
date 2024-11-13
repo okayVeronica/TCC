@@ -71,6 +71,6 @@
           <button type="button" class="btn btn-primary" onclick="Verificar()">Cadastrar</button>
         </div>
       </form>
-      <script src='cadastroPsicologo.js'></script>
+      <script src='../JS/cadastroPsicologo.js'></script>
    </body>
 </html>

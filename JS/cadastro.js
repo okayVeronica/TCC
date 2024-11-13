@@ -76,16 +76,15 @@ function Verificar() {
             var xhr = new XMLHttpRequest();
             var response = "";
 
-            xhr.open("POST", "../REGISTRO-PHP/kkk.php");
+            xhr.open("POST", "../REGISTRO-PHP/cad.php");
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhr.send("perfil=" + perfil);
+            xhr.send("nome=" + nome + "&genero=" + genero + "&perfil=" + perfil + "&cpf=" + cpf + "&idade=" + idade + "&email=" + email + "&senha=" + senha);
             xhr.onload = function() {
                 if (xhr.status === 200) {
                     console.log("nice porra kkkkkkkk");           
                     response = xhr.responseText;
                     
-                    if (response == "pessoal") window.location.href = "pessoal.php";
-                    if (response == "profissional") window.location.href = "profissional.php";
+                    if (response == "login") window.location.href = "../views/login.php";
                 }
             }
         }

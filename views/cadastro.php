@@ -11,30 +11,30 @@
 <body>
     <h1> Tulip Love</h1>
     <p>Faça seu cadastro</p>
-    <form method="post">
+    <form method="post" action="../REGISTRO-PHP/cad.php">
             <label class="form-label">Nome:</label><br>
-            <input type="text" class="form-control" id="nome" placeholder="digite seu nome completo"><br>
+            <input type="text" class="form-control" name="nome" placeholder="digite seu nome completo"><br>
             <label for="gender" class="form-label">Gênero:</label><br>
-            <input type="text" class="form-control" id="genero" placeholder="fem-masc"><br>
+            <input type="text" class="form-control" name="genero" placeholder="fem-masc"><br>
             <label for="dataNascimento">Data de Nascimento:</label><br>
             <input type="date" id="idade" name="idade" required><br>
             <label for="cpf" class="form-label">CPF:</label><br>
-            <input type="text" class="form-control" id="cpf" placeholder="___.___.___-__"><br>
+            <input type="text" class="form-control" name="cpf" placeholder="___.___.___-__"><br>
             <label for="email" class="form-label">E-mail:</label><br>
-            <input type="email" class="form-control" id="email" placeholder="fulaninhodetal@hotmail"><br>
+            <input type="email" class="form-control" name="email" placeholder="fulaninhodetal@hotmail"><br>
             <label for="">Como você pretende utilizar nossa plataforma?</label>
-            <select name="perfil" class="form-control" id="perfil" required>
+            <select name="perfil" class="form-control" name="perfil" required>
               <option value="pessoal" name="pessoal">Para uso pessoal</option>
               <option value="profissional" name="profissional">Para uso profissional</option>
             </select><br>
             <label for="password" class="form-label">Senha:</label><br>
-            <input type="password" class="form-control" id="senha"><br>
+            <input type="password" class="form-control" name="senha"><br>
             <label for="password" class="form-label">Confirmar senha:</label><br>
-            <input type="password" class="form-control" id="confirmarSenha"><br>
+            <input type="password" class="form-control" name="confirmarSenha"><br>
         <br>
         <br>
         <div class="col-12">
-          <button type="submit" class="btn btn-primary" onclick="Verificar();">Cadastrar</button>
+          <button type="submit" class="btn btn-primary">Continuar</button>
         </div>
       </form>
       <script src='../JS/cadastro.js'></script>
